@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokédex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/268927758c.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="one">
+                <div id="lights">
+                    <span id="dot"></span>
+                    <div>
+                        <div id="speaker"></div>
+                        <div id="speaker"></div>
+                        <div id="speaker"></div>
+                    </div>
+                </div>
+                <div id="display">
+                    <div id="window1">
+                        <div id="image"></div>
+                    </div>
+                </div>
+                <div id="btns">
+                    <div id="onbtn">
+                        <a id="onoff"><i  class="fas fa-power-off"></i></a> 
+                    </div>
+                    <div id="leftbtn">
+                        <a onclick="goBack()"><i class="fas fa-angle-left"></i></a> 
+                    </div>
+                    <div id="rightbtn">
+                        <a onclick="goForward()"><i class="fas fa-angle-right"></i></a> 
+                    </div>
+                    <div id="sound">
+                        <audio id="audio" src="Pokemon.mp3"></audio>
+                        <a onclick="togglePlay()"><i class="fas fa-volume-up"></i></a>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="two">
+                <div></div>
+                <div id="hinge"></div>
+                <div></div>
+                <div id="hinge"></div>
+                <div></div>
+            </div>
+            <div id="three">
+                <div id="text">
+                    <div id="window2">
+                        <div id="top">
+                            <div id="info">Information:</div> 
+                        </div>
+                        <div id="bottom"></div>
+                    </div>
+                </div>
+                <div id="search">
+                    <input type="text" id="name" placeholder="Enter number">
+                    <button id="button">Search</button>
+                </div>
+            </div>
+        </div>
+
+    <!--Bootstrap & Jquery scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!--Your script-->
+        <script src="script.js"></script>
+    </body>
+</html>
